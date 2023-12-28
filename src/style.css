@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("./imagens/cadeiras-cinema.jpg");
+    background-color: #000000;
+    background-size: 100% 100vh;
+    padding: 0 100px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  body > img{
+    margin: 0 10px;
+  }
+
+  .header h3{
+    color: #fff;
+    font-size: 2.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+.container-search{
+        padding: 6rem;
+        
+        /* border: .2rem solid #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.container-search input{
+    font-size: 2rem;
+    margin: .2rem;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.container-search button{
+    margin: .2rem;
+    font-size: 2rem;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.container-lista{
+    margin: 20px 0;
+}
+
+.lista{
+    display: flex;
+    margin: .5rem;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    
+    
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+  
+}
+.lista .item{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1rem;
+    /* border: .2rem solid #fff; */
+}
+.lista .item .imagem-filme{
+    max-width: 250px;
+    height: calc(100% - 66px);
+    object-fit: cover;
+}
+.lista .item .context{
+    /* border: .2rem solid #fff; */
+    margin-top: .5rem ;
+}
+.lista .item .context h4, p {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: .2rem 0;
+}
